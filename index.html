@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zaira Reyes · Data Science y Análisis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<!--
+  ============ ENLACES Y ARCHIVOS QUE DEBES REEMPLAZAR ============
+  Busca en este archivo el texto "REEMPLAZAR AQUÍ CON MI URL REAL":
+   1. CV en PDF ........ botón "Descargar CV" (Inicio) -> archivo cv/CV-Caperusita-Roja.pdf
+   2. Correo ........... enlace en Contacto
+   3. LinkedIn ......... enlace en Contacto
+   4. GitHub ........... enlace en Contacto
+   5. Google Colab ..... botón en Proyectos
+   6. Jupyter .......... botón en Proyectos
+  ==================================================================
+-->
+
+<!-- Iconos (dibujados a mano, libres de derechos) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+<symbol id="i-web" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-4.8-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.200 12 20 12 20z"/></symbol>
+<symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+<symbol id="i-img" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.800"/><path d="M21 16l-5-5-9 9"/></symbol>
+<defs>
+<filter id="cs" x="-25%" y="-20%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#C0527F" flood-opacity=".28"/></filter>
+<filter id="cm" x="-30%" y="-30%" width="160%" height="175%"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#8A3E66" flood-opacity=".28"/></filter>
+<linearGradient id="gp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFCADB"/><stop offset="1" stop-color="#F59CBC"/></linearGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E0FC"/><stop offset="1" stop-color="#BFAEEE"/></linearGradient>
+<linearGradient id="gs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9ECFB"/><stop offset="1" stop-color="#A6C8EE"/></linearGradient>
+<linearGradient id="gc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE8D6"/><stop offset="1" stop-color="#FFBD94"/></linearGradient>
+<linearGradient id="gw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F0E4EC"/></linearGradient>
+<linearGradient id="gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF9DBB"/><stop offset="1" stop-color="#E8648F"/></linearGradient>
+<linearGradient id="hi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#7A2E55" stop-opacity=".18"/></linearGradient>
+</defs>
+<symbol id="c-pie" viewBox="0 0 120 120"><rect x="6" y="4" width="108" height="108" rx="30" fill="url(#gp)" filter="url(#cs)"/><rect x="8" y="6" width="104" height="104" rx="28" fill="none" stroke="url(#hi)" stroke-width="4"/><g transform="rotate(-90 60 58)" fill="none" stroke-width="18" filter="url(#cm)"><circle cx="60" cy="58" r="24" stroke="#EE6A93" stroke-dasharray="55 96"/><circle cx="60" cy="58" r="24" stroke="#FFB290" stroke-dasharray="40 111" stroke-dashoffset="-55"/><circle cx="60" cy="58" r="24" stroke="#CDBAF2" stroke-dasharray="52 99" stroke-dashoffset="-95"/></g><circle cx="60" cy="58" r="13" fill="#FFE3EC"/></symbol>
+<symbol id="c-bars" viewBox="0 0 120 120"><rect x="6" y="4" width="108" height="108" rx="30" fill="url(#gs)" filter="url(#cs)"/><rect x="8" y="6" width="104" height="104" rx="28" fill="none" stroke="url(#hi)" stroke-width="4"/><g filter="url(#cm)"><rect x="24" y="64" width="12" height="28" rx="5" fill="url(#gp)"/><rect x="42" y="42" width="12" height="50" rx="5" fill="url(#gc)"/><rect x="60" y="56" width="12" height="36" rx="5" fill="url(#gl)"/><rect x="78" y="30" width="12" height="62" rx="5" fill="url(#gd)"/><rect x="96" y="48" width="12" height="44" rx="5" fill="url(#gp)"/></g></symbol>
+<symbol id="c-line" viewBox="0 0 120 120"><rect x="6" y="4" width="108" height="108" rx="30" fill="url(#gl)" filter="url(#cs)"/><rect x="8" y="6" width="104" height="104" rx="28" fill="none" stroke="url(#hi)" stroke-width="4"/><path d="M24 40H96M24 58H96M24 76H96M40 28V92M60 28V92M80 28V92" stroke="#fff" stroke-opacity=".45" stroke-width="2"/><path d="M26 80C40 78 46 66 56 68S72 58 78 50S90 42 98 40" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" filter="url(#cm)"/><circle cx="38" cy="76" r="5.5" fill="#5A3A55"/><circle cx="36.5" cy="74.2" r="1.6" fill="#fff" fill-opacity=".8"/><circle cx="56" cy="68" r="5.5" fill="#5A3A55"/><circle cx="54.5" cy="66.2" r="1.6" fill="#fff" fill-opacity=".8"/><circle cx="78" cy="50" r="5.5" fill="#5A3A55"/><circle cx="76.5" cy="48.2" r="1.6" fill="#fff" fill-opacity=".8"/><circle cx="98" cy="40" r="5.5" fill="#5A3A55"/><circle cx="96.5" cy="38.2" r="1.6" fill="#fff" fill-opacity=".8"/></symbol>
+<symbol id="c-table" viewBox="0 0 120 120"><rect x="6" y="4" width="108" height="108" rx="30" fill="url(#gc)" filter="url(#cs)"/><rect x="8" y="6" width="104" height="104" rx="28" fill="none" stroke="url(#hi)" stroke-width="4"/><g filter="url(#cm)"><rect x="22" y="26" width="14" height="18" rx="5" fill="url(#gw)"/><rect x="22" y="62" width="14" height="18" rx="5" fill="url(#gw)"/><rect x="44" y="26" width="52" height="10" rx="5" fill="url(#gp)"/><rect x="44" y="42" width="40" height="10" rx="5" fill="url(#gp)"/><rect x="44" y="58" width="52" height="10" rx="5" fill="url(#gp)"/><rect x="44" y="74" width="32" height="10" rx="5" fill="url(#gp)"/><rect x="44" y="90" width="48" height="10" rx="5" fill="url(#gp)"/></g></symbol>
+<symbol id="c-dash" viewBox="0 0 120 120"><rect x="6" y="4" width="108" height="108" rx="30" fill="url(#gs)" filter="url(#cs)"/><rect x="8" y="6" width="104" height="104" rx="28" fill="none" stroke="url(#hi)" stroke-width="4"/><g filter="url(#cm)"><rect x="22" y="24" width="76" height="40" rx="10" fill="url(#gl)"/><rect x="22" y="74" width="76" height="9" rx="4.5" fill="url(#gl)"/><rect x="22" y="90" width="34" height="9" rx="4.5" fill="url(#gl)"/><rect x="62" y="90" width="36" height="9" rx="4.5" fill="url(#gl)"/></g></symbol>
+<symbol id="c-db" viewBox="0 0 120 120"><g filter="url(#cs)"><ellipse cx="60" cy="96" rx="34" ry="12" fill="url(#gl)"/><rect x="26" y="74" width="68" height="22" fill="url(#gl)"/><ellipse cx="60" cy="74" rx="34" ry="12" fill="url(#gl)"/><ellipse cx="60" cy="73" rx="28" ry="8" fill="#fff" fill-opacity=".38"/><circle cx="80" cy="88" r="3" fill="#fff" fill-opacity=".8"/><circle cx="70" cy="90" r="3" fill="#fff" fill-opacity=".8"/><ellipse cx="60" cy="72" rx="34" ry="12" fill="url(#gp)"/><rect x="26" y="50" width="68" height="22" fill="url(#gp)"/><ellipse cx="60" cy="50" rx="34" ry="12" fill="url(#gp)"/><ellipse cx="60" cy="49" rx="28" ry="8" fill="#fff" fill-opacity=".38"/><circle cx="80" cy="64" r="3" fill="#fff" fill-opacity=".8"/><circle cx="70" cy="66" r="3" fill="#fff" fill-opacity=".8"/><ellipse cx="60" cy="48" rx="34" ry="12" fill="url(#gs)"/><rect x="26" y="26" width="68" height="22" fill="url(#gs)"/><ellipse cx="60" cy="26" rx="34" ry="12" fill="url(#gs)"/><ellipse cx="60" cy="25" rx="28" ry="8" fill="#fff" fill-opacity=".38"/><circle cx="80" cy="40" r="3" fill="#fff" fill-opacity=".8"/><circle cx="70" cy="42" r="3" fill="#fff" fill-opacity=".8"/></g></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13.500c0-1.500 1-2.500 2.300-2.500s2.200.9 2.200 2.500V16"/></symbol>
+<symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.500"/><circle cx="6" cy="18" r="2.500"/><circle cx="18" cy="8" r="2.500"/><path d="M6 8.500v7M18 10.500c0 4-8 2.500-11.500 6"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V6M6 11l6-6 6 6"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2l2.2 7.8L22 12l-7.800 2.200L12 22l-2.200-7.800L2 12l7.800-2.200z"/></symbol>
+</svg>
+
+<header class="top"><div class="wrap">
+<a class="logo" href="#inicio"><i aria-hidden="true"></i>Zaira Reyes</a>
+<nav aria-label="Principal">
+<a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a href="#experiencia">Experiencia</a><a href="#contacto">Contacto</a>
+</nav></div></header>
+
+<main>
+<section id="inicio" class="hero"><div class="wrap">
+<div>
+<span class="kicker">Data Science · Análisis</span>
+<h1>Zaira <span>Reyes</span></h1>
+<p class="lead">Analista de datos que encuentra el camino correcto entre miles de registros.</p>
+<div class="btns"><a class="btn main" href="#proyectos">Ver proyectos</a><a class="btn" href="#contacto">Contactarme</a>
+<a class="btn" href="cv/CV_Zaira_Reyes.pdf"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-download"/></svg>Descargar CV</a></div>
+</div>
+
+<div class="stage">
+<svg class="clay-hero" viewBox="0 0 480 400" role="img" aria-label="Ilustración de una laptop con un panel de análisis de datos"><ellipse cx="240" cy="372" rx="196" ry="14" fill="#C0527F" fill-opacity=".16"/><rect x="80" y="70" width="320" height="230" rx="26" fill="url(#gw)" filter="url(#cs)"/><rect x="82" y="72" width="316" height="226" rx="24" fill="none" stroke="url(#hi)" stroke-width="4"/><rect x="96" y="86" width="288" height="198" rx="16" fill="#FFF3F8"/><rect x="34" y="296" width="412" height="58" rx="24" fill="url(#gw)" filter="url(#cs)"/><rect x="36" y="298" width="408" height="54" rx="22" fill="none" stroke="url(#hi)" stroke-width="4"/><g fill="url(#gl)"><rect x="64" y="305" width="17" height="8" rx="3"/><rect x="86" y="305" width="17" height="8" rx="3"/><rect x="108" y="305" width="17" height="8" rx="3"/><rect x="130" y="305" width="17" height="8" rx="3"/><rect x="152" y="305" width="17" height="8" rx="3"/><rect x="174" y="305" width="17" height="8" rx="3"/><rect x="196" y="305" width="17" height="8" rx="3"/><rect x="218" y="305" width="17" height="8" rx="3"/><rect x="240" y="305" width="17" height="8" rx="3"/><rect x="262" y="305" width="17" height="8" rx="3"/><rect x="284" y="305" width="17" height="8" rx="3"/><rect x="306" y="305" width="17" height="8" rx="3"/><rect x="328" y="305" width="17" height="8" rx="3"/><rect x="350" y="305" width="17" height="8" rx="3"/><rect x="372" y="305" width="17" height="8" rx="3"/><rect x="394" y="305" width="17" height="8" rx="3"/><rect x="74" y="317" width="17" height="8" rx="3"/><rect x="96" y="317" width="17" height="8" rx="3"/><rect x="118" y="317" width="17" height="8" rx="3"/><rect x="140" y="317" width="17" height="8" rx="3"/><rect x="162" y="317" width="17" height="8" rx="3"/><rect x="184" y="317" width="17" height="8" rx="3"/><rect x="206" y="317" width="17" height="8" rx="3"/><rect x="228" y="317" width="17" height="8" rx="3"/><rect x="250" y="317" width="17" height="8" rx="3"/><rect x="272" y="317" width="17" height="8" rx="3"/><rect x="294" y="317" width="17" height="8" rx="3"/><rect x="316" y="317" width="17" height="8" rx="3"/><rect x="338" y="317" width="17" height="8" rx="3"/><rect x="360" y="317" width="17" height="8" rx="3"/><rect x="382" y="317" width="17" height="8" rx="3"/></g><rect x="190" y="334" width="100" height="11" rx="5.5" fill="#F0E3EC"/><use href="#c-pie" x="40" y="22" width="108" height="108"/><use href="#c-dash" x="190" y="4" width="100" height="100"/><use href="#c-bars" x="330" y="22" width="108" height="108"/><use href="#c-table" x="62" y="158" width="124" height="124"/><use href="#c-db" x="192" y="168" width="100" height="100"/><use href="#c-line" x="314" y="158" width="124" height="124"/></svg>
+<div class="avatar">
+  <img
+    class="avatar-img"
+    src="img/foto-perfil.jpg"
+    alt="Fotografía de perfil"
+  >
+</div>
+<path d="M90 490c0-95 60-150 150-150s150 55 150 150z" fill="#D63C7A"/>
+<path d="M190 340l50 70 50-70c-30-12-70-12-100 0z" fill="#F4C9B0"/>
+<path d="M150 300c-30-120 20-200 90-200s120 80 90 200c-20 40-160 40-180 0z" fill="#3B2A3A"/>
+<ellipse cx="240" cy="228" rx="64" ry="78" fill="#F4C9B0"/>
+<path d="M170 215c20-60 100-70 140 0-30-24-90-34-140 0z" fill="#3B2A3A"/>
+<circle cx="218" cy="232" r="5" fill="#3B2A3A"/><circle cx="262" cy="232" r="5" fill="#3B2A3A"/>
+<path d="M222 266q18 14 36 0" fill="none" stroke="#B4476B" stroke-width="4" stroke-linecap="round"/>
+<rect x="196" y="214" width="34" height="26" rx="10" fill="none" stroke="#3B2A3A" stroke-width="3"/>
+<rect x="250" y="214" width="34" height="26" rx="10" fill="none" stroke="#3B2A3A" stroke-width="3"/>
+<path d="M230 226h20" stroke="#3B2A3A" stroke-width="3"/>
+</svg></div>
+<div class="badge">Data<br>Science</div>
+</div>
+</div></section>
+
+<section id="sobre-mi"><div class="wrap">
+<div class="sec-head"><h2>Sobre mí</h2><svg class="deco" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#c-dash"/></svg></div>
+<div class="about">
+<figure class="ph ph-about">
+  <img src="img/foto-about.jpg" alt="Caperucita Roja trabajando">
+</figure><div class="card txt">
+<p>Soy egresada de la Licenciatura en Informática y me enfoco en el análisis y la visualización de datos. Me gusta convertir tablas confusas en respuestas claras que ayuden a tomar decisiones.</p>
+<p>Trabajo con Python, SQL y Power BI, y he participado en equipos de datos en una fintech y en proyectos de marketing digital y diseño web. Eso me da una visión técnica y también creativa de cómo contar una historia con datos.</p>
+<p>Me caracterizo por la iniciativa, el compromiso y la comunicación clara.</p>
+</div>
+<ul class="card facts">
+<li><b>Lugar</b><span>Xochimilco, CDMX<span></li>
+<li><b>Enfoque</b><span>Data Science y análisis</span></li>
+<li><b>Estudios</b><span>Lic. en Informática (egresada)</span></li>
+<li><b>Teléfono</b><span><a href="tel:+529541423028">9541523028</a></span></li>
+</ul>
+</div></div></section>
+
+<section id="habilidades"><svg class="deco deco-m r" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#c-pie"/></svg><div class="wrap">
+<div class="sec-head"><h2>Habilidades y tecnologías</h2><svg class="deco" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#c-db"/></svg></div>
+<div class="groups">
+<div class="card group c1"><div class="ic"><svg class="ico"><use href="#i-chart"/></svg></div><h3>Análisis y visualización</h3><ul class="tags"><li>Estadística</li><li>Power BI</li><li>Google Sheets</li><li>Python</li><li>Google Colab</li></ul></div>
+<div class="card group c2"><div class="ic"><svg class="ico"><use href="#i-db"/></svg></div><h3>Bases de datos</h3><ul class="tags"><li>MySQL (SQL)</li><li>Modelado de bases de datos</li><li>Diagramas ER</li><li>MySQL Workbench</li><li>DBeaver</li></ul></div>
+<div class="card group c3"><div class="ic"><svg class="ico"><use href="#i-code"/></svg></div><h3>Lenguajes</h3><ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>C</li></ul></div>
+<div class="card group c4"><div class="ic"><svg class="ico"><use href="#i-web"/></svg></div><h3>Desarrollo web</h3><ul class="tags"><li>HTML5</li><li>CSS</li><li>Node.js</li></ul></div>
+<div class="card group c5"><div class="ic"><svg class="ico"><use href="#i-grid"/></svg></div><h3>Herramientas Google</h3><ul class="tags"><li>Sheets</li><li>Drive</li><li>Docs</li><li>Forms</li><li>Slides</li><li>Calendar</li><li>Gmail</li><li>Colab</li><li>Apps Script</li></ul></div>
+<div class="card group c6"><div class="ic"><svg class="ico"><use href="#i-heart"/></svg></div><h3>Habilidades personales</h3><ul class="tags"><li>Trabajo en equipo</li><li>Resolución de problemas</li><li>Organización</li><li>Comunicación efectiva</li><li>Iniciativa</li><li>Facilidad de redacción</li><li>Buena ortografía</li><li>Compromiso</li><li>Ética profesional</li></ul></div>
+</div></div></section>
+
+<section id="proyectos"><div class="wrap">
+<div class="sec-head"><h2>Proyectos</h2><svg class="deco" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#c-bars"/></svg></div>
+<div class="panel">
+<article class="proj">
+<div class="txt">
+<figure class="ph ph-cover">
+  <img src="img/dataset-cover.jpg" alt="Portada del proyecto de análisis de datos">
+</figure><h3>Percepciones y actitudes frente a la violencia contra las mujeres</h3>
+<p>Análisis exploratorio en Python de 12,450 registros de encuestas demográficas y de salud (DHS) de 70 países, para entender cómo se relacionan el género, la educación, la edad, el estado civil, el empleo y el lugar de residencia con la justificación de la violencia contra las mujeres.</p>
+<p>Limpié y transformé los datos con Pandas, imputé valores faltantes por grupo (país + pregunta) y construí un modelo de regresión logística (AUC = 0.893). La educación resultó el factor individual más fuerte, y el promedio por país va de 1.57% (República Dominicana) a 47.77% (Eritrea).</p>
+<ul class="tags"><li>Python</li><li>Pandas</li><li>Plotly</li><li>Estadística</li></ul>
+<div class="btns proj-links">
+<!-- REEMPLAZAR AQUÍ CON MI URL REAL: enlace a mi cuaderno de Google Colab -->
+<a class="btn main sm" href="https://colab.research.google.com/drive/1IR1MF6-NJTxd1K7OuWbM3E_vTAweywJZ#scrollTo=6upMhqBKjguZ" target="_blank" rel="noopener noreferrer" aria-label="Abrir en Google Colab (se abre en una pestaña nueva)"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-book"/></svg>Abrir en Colab</a>
+</div>
+<p class="note">Fuente de datos: Kaggle, Violence Against Women and Girls (DHS Program).</p>
+</div>
+<div class="viz" role="img" aria-label="Gráfica: distribución de registros por nivel de justificación de la violencia">
+<b>Registros por nivel de justificación</b>
+<div class="bar"><span>Bajo</span><div style="width:76%"></div><span>38%</span></div>
+<div class="bar"><span>Medio</span><div style="width:75%"></div><span>37.6%</span></div>
+<div class="bar"><span>Alto</span><div class="hi" style="width:49%"></div><span>24.3%</span></div>
+</div>
+</article>
+</div>
+</div></section>
+
+<section id="experiencia"><svg class="deco deco-m l" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#c-bars"/></svg><div class="wrap">
+<div class="sec-head"><h2>Experiencia y formación</h2><svg class="deco" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#c-table"/></svg></div>
+<div class="tl">
+<div class="card item"><figure class="ph thumb" role="img" aria-label="Espacio para Logo o foto · Kubo Financiero"><!-- Reemplaza este comentario por: <img src="img/exp-kubo.jpg" alt="Logo o foto · Kubo Financiero"> --><svg class="ico"><use href="#i-brief"/></svg></figure><div><h3>Practicante, Equipo de Data</h3><div class="meta">Kubo Financiero · Fintech · Remoto · 2.ª estancia profesional</div>
+<p>Participé en el desarrollo de un módulo en Python para generar cadenas en formato INTF, con bases de datos relacionales en DBeaver y contenedores Docker.</p>
+<p>Trabajé con Scrum y roté cada semana el rol de líder. Propuse un diagrama de clases para estandarizar el proyecto y aporté análisis a una investigación sobre migrar infraestructura a AWS.</p></div></div>
+<div class="card item"><figure class="ph thumb" role="img" aria-label="Espacio para Logo o foto · Fusión Creativa"><!-- Reemplaza este comentario por: <img src="img/exp-fusion.jpg" alt="Logo o foto · Fusión Creativa"> --><svg class="ico"><use href="#i-brief"/></svg></figure><div><h3>Practicante, Marketing Digital y Diseño Web</h3><div class="meta">Fusión Creativa · Agencia de publicidad · Oaxaca · 1.ª estancia profesional, 2024</div>
+<p>Colaboré en proyectos reales para varias marcas: contenido fotográfico y audiovisual, parrillas para redes sociales y propuestas de identidad de marca.</p>
+<p>Mi conceptualización para el restaurante Pitiona fue aprobada por el cliente. También ayudé a desarrollar componentes web interactivos.</p></div></div>
+<div class="card item"><figure class="ph thumb" role="img" aria-label="Espacio para Logo o foto · UMAR"><!-- Reemplaza este comentario por: <img src="img/exp-umar.jpg" alt="Logo o foto · UMAR"> --><svg class="ico"><use href="#i-brief"/></svg></figure><div><h3>Servicio social: Estrategia Digital e Identidad Institucional</h3><div class="meta">Universidad del Mar (UMAR) · Campus Puerto Escondido</div>
+<p>Gestioné las redes de la carrera de Informática/ITC en Instagram, TikTok y Facebook, e implementé un Linktree institucional.</p>
+<p>Produje foto, video y material gráfico. Una de mis fotografías se usó como folleto oficial de la institución.</p></div></div>
+</div>
+<h3 class="sub">Formación</h3>
+<div class="edu">
+<div class="card item"><h3>Licenciatura en Informática</h3><div class="meta">2020 – 2026 · Egresada</div></div>
+<div class="card item"><h3>Profesional Técnico Bachiller en Contabilidad</h3><div class="meta">CONALEP 158 · 2017 – 2020</div></div>
+</div>
+</div></section>
+
+<section id="contacto"><div class="wrap">
+<div class="box"><svg class="deco box-deco" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#c-line"/></svg>
+<div class="box-txt">
+<h2>Contacto</h2>
+<p>¿Tienes datos y preguntas? Llámame y platicamos.</p>
+<a class="big" href="tel:+529541523028">9541523028</a>
+<div class="btns"><a class="btn main" href="tel:+529541523028">Llamar ahora</a><a class="btn" href="https://wa.me/529541523028" rel="noopener">Escribir por WhatsApp</a></div>
+<ul class="social" aria-label="Correo y redes profesionales">
+<!-- REEMPLAZAR AQUÍ CON MI URL REAL: tu correo electrónico -->
+<li><a href="mailto:zg10774@gmail.com"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>Correo</a></li>
+<!-- REEMPLAZAR AQUÍ CON MI URL REAL: tu perfil de LinkedIn -->
+<li><a href="https://www.linkedin.com/in/zaira-itzel-reyes-gutierrez-495004398" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (se abre en una pestaña nueva)"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-in"/></svg>LinkedIn</a></li>
+<!-- REEMPLAZAR AQUÍ CON MI URL REAL: tu perfil de GitHub -->
+<li><a href="https://github.com/ZairaRG" target="_blank" rel="noopener noreferrer" aria-label="GitHub (se abre en una pestaña nueva)"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-branch"/></svg>GitHub</a></li>
+</ul>
+<p class="note">Xochimilco, CDMX</p>
+</div>
+<figure class="ph ph-contact">
+  <img src="img/contacto.png" alt="Ilustración de contacto con detalles en rosa pastel">
+</figure>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Zaira Reyes. Todos los derechos reservados.</div></footer>
+<a class="to-top" href="#inicio" aria-label="Volver arriba"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-up"/></svg></a>
+<script src="script.js" defer></script>
+</body>
+</html>
